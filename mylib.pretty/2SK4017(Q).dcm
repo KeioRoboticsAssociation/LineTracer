@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 2SK4017(Q)
+D MOSFET,Nch,60V/5A/0.1ohm,New Pw-Mold2
+K
+F http://toshiba.semicon-storage.com/us/product/mosfet/detail.2SK4017.html
+$ENDCMP
+#
+#End Doc Library

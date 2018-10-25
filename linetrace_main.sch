@@ -1,0 +1,586 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:TPR-105
+LIBS:Nano
+LIBS:2SK4017(Q)
+LIBS:linetrace_main-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "linetrace_main"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TPR-105 U1
+U 1 1 5A7935B8
+P 6050 1600
+F 0 "U1" H 6750 1750 50  0000 C CNN
+F 1 "TPR-105" H 6750 1350 50  0000 C CNN
+F 2 "mylib2:TPR-105_new" H 6750 1250 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/TPR-105.pdf" H 6750 1150 50  0001 C CNN
+F 4 "Photo interrupter" H 6750 1050 50  0001 C CNN "Description"
+F 5 "RS" H 6750 950 50  0001 C CNN "Supplier_Name"
+F 6 "" H 6750 850 50  0001 C CNN "RS Part Number"
+F 7 "Genixtek" H 6750 750 50  0001 C CNN "Manufacturer_Name"
+F 8 "TPR-105" H 6750 650 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 6750 550 50  0001 C CNN "Allied_Number"
+F 10 "" H 6750 450 50  0001 C CNN "Other Part Number"
+F 11 "" H 7300 350 50  0001 C CNN "Height"
+	1    6050 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TPR-105 U2
+U 1 1 5A793636
+P 6050 2150
+F 0 "U2" H 6750 2300 50  0000 C CNN
+F 1 "TPR-105" H 6750 1900 50  0000 C CNN
+F 2 "mylib2:TPR-105_new" H 6750 1800 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/TPR-105.pdf" H 6750 1700 50  0001 C CNN
+F 4 "Photo interrupter" H 6750 1600 50  0001 C CNN "Description"
+F 5 "RS" H 6750 1500 50  0001 C CNN "Supplier_Name"
+F 6 "" H 6750 1400 50  0001 C CNN "RS Part Number"
+F 7 "Genixtek" H 6750 1300 50  0001 C CNN "Manufacturer_Name"
+F 8 "TPR-105" H 6750 1200 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 6750 1100 50  0001 C CNN "Allied_Number"
+F 10 "" H 6750 1000 50  0001 C CNN "Other Part Number"
+F 11 "" H 7300 900 50  0001 C CNN "Height"
+	1    6050 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LD1117S12TR_SOT223 U3
+U 1 1 5A79372D
+P 6700 3300
+F 0 "U3" H 6550 3425 50  0000 C CNN
+F 1 "LD1117S12TR_SOT223" H 6300 3500 50  0000 L CNN
+F 2 "mylib:OldSowjetaera_Transistor_Type-I_SmallPads" H 6700 3500 50  0001 C CNN
+F 3 "" H 6800 3050 50  0001 C CNN
+	1    6700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5A793855
+P 6200 3450
+F 0 "C1" H 6225 3550 50  0000 L CNN
+F 1 "0.33uF" H 6225 3350 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 6238 3300 50  0001 C CNN
+F 3 "" H 6200 3450 50  0001 C CNN
+	1    6200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C2
+U 1 1 5A793887
+P 7200 3450
+F 0 "C2" H 7225 3550 50  0000 L CNN
+F 1 "33uF" H 7225 3350 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 7238 3300 50  0001 C CNN
+F 3 "" H 7200 3450 50  0001 C CNN
+	1    7200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5A7938EE
+P 6700 3700
+F 0 "#PWR01" H 6700 3450 50  0001 C CNN
+F 1 "GND" H 6700 3550 50  0000 C CNN
+F 2 "" H 6700 3700 50  0001 C CNN
+F 3 "" H 6700 3700 50  0001 C CNN
+	1    6700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +6V #PWR02
+U 1 1 5A7939C2
+P 6200 3200
+F 0 "#PWR02" H 6200 3050 50  0001 C CNN
+F 1 "+6V" H 6200 3340 50  0000 C CNN
+F 2 "" H 6200 3200 50  0001 C CNN
+F 3 "" H 6200 3200 50  0001 C CNN
+	1    6200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 5A7939EE
+P 7200 3200
+F 0 "#PWR03" H 7200 3050 50  0001 C CNN
+F 1 "+5V" H 7200 3340 50  0000 C CNN
+F 2 "" H 7200 3200 50  0001 C CNN
+F 3 "" H 7200 3200 50  0001 C CNN
+	1    7200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5A793D1F
+P 5700 1700
+F 0 "R1" V 5780 1700 50  0000 C CNN
+F 1 "240Ω" V 5700 1700 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5630 1700 50  0001 C CNN
+F 3 "" H 5700 1700 50  0001 C CNN
+	1    5700 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5A793D7E
+P 5700 2250
+F 0 "R2" V 5780 2250 50  0000 C CNN
+F 1 "240Ω" V 5700 2250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5630 2250 50  0001 C CNN
+F 3 "" H 5700 2250 50  0001 C CNN
+	1    5700 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5A793DB2
+P 7800 2250
+F 0 "R4" V 7880 2250 50  0000 C CNN
+F 1 "18kΩ" V 7800 2250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7730 2250 50  0001 C CNN
+F 3 "" H 7800 2250 50  0001 C CNN
+	1    7800 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5A793DF8
+P 7800 1700
+F 0 "R3" V 7880 1700 50  0000 C CNN
+F 1 "18kΩ" V 7800 1700 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7730 1700 50  0001 C CNN
+F 3 "" H 7800 1700 50  0001 C CNN
+	1    7800 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR04
+U 1 1 5A79400D
+P 5900 1250
+F 0 "#PWR04" H 5900 1100 50  0001 C CNN
+F 1 "+5V" H 5900 1390 50  0000 C CNN
+F 2 "" H 5900 1250 50  0001 C CNN
+F 3 "" H 5900 1250 50  0001 C CNN
+	1    5900 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5A794049
+P 5900 2550
+F 0 "#PWR05" H 5900 2300 50  0001 C CNN
+F 1 "GND" H 5900 2400 50  0000 C CNN
+F 2 "" H 5900 2550 50  0001 C CNN
+F 3 "" H 5900 2550 50  0001 C CNN
+	1    5900 2550
+	1    0    0    -1  
+$EndComp
+Text Label 8150 1550 0    60   ~ 0
+analog1
+Text Label 8150 2100 0    60   ~ 0
+analog2
+Text Label 3900 2700 0    60   ~ 0
+analog1
+Text Label 3900 2600 0    60   ~ 0
+analog2
+$Comp
+L +5V #PWR06
+U 1 1 5A794876
+P 3900 1900
+F 0 "#PWR06" H 3900 1750 50  0001 C CNN
+F 1 "+5V" H 4050 1950 50  0000 C CNN
+F 2 "" H 3900 1900 50  0001 C CNN
+F 3 "" H 3900 1900 50  0001 C CNN
+	1    3900 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5A79499F
+P 3900 1700
+F 0 "#PWR07" H 3900 1450 50  0001 C CNN
+F 1 "GND" H 3750 1650 50  0000 C CNN
+F 2 "" H 3900 1700 50  0001 C CNN
+F 3 "" H 3900 1700 50  0001 C CNN
+	1    3900 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L 2SK4017(Q) Q1
+U 1 1 5A794CA2
+P 2300 4400
+F 0 "Q1" H 2900 4550 50  0000 C CNN
+F 1 "2SK4017(Q)" H 2900 4150 50  0000 C CNN
+F 2 "2SK4017(Q):TO230P250X650X900-3P" H 2900 4050 50  0001 C CNN
+F 3 "http://toshiba.semicon-storage.com/us/product/mosfet/detail.2SK4017.html" H 2900 3950 50  0001 C CNN
+F 4 "MOSFET,Nch,60V/5A/0.1ohm,New Pw-Mold2" H 2900 3850 50  0001 C CNN "Description"
+F 5 "RS" H 2900 3750 50  0001 C CNN "Supplier_Name"
+F 6 "0185580P" H 2900 3650 50  0001 C CNN "RS Part Number"
+F 7 "Toshiba" H 2900 3550 50  0001 C CNN "Manufacturer_Name"
+F 8 "2SK4017(Q)" H 2900 3450 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 2900 3350 50  0001 C CNN "Allied_Number"
+F 10 "" H 2900 3250 50  0001 C CNN "Other Part Number"
+F 11 "2.5" H 3350 3150 50  0001 C CNN "Height"
+	1    2300 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2SK4017(Q) Q2
+U 1 1 5A794D73
+P 2300 5000
+F 0 "Q2" H 2900 5150 50  0000 C CNN
+F 1 "2SK4017(Q)" H 2900 4750 50  0000 C CNN
+F 2 "2SK4017(Q):TO230P250X650X900-3P" H 2900 4650 50  0001 C CNN
+F 3 "http://toshiba.semicon-storage.com/us/product/mosfet/detail.2SK4017.html" H 2900 4550 50  0001 C CNN
+F 4 "MOSFET,Nch,60V/5A/0.1ohm,New Pw-Mold2" H 2900 4450 50  0001 C CNN "Description"
+F 5 "RS" H 2900 4350 50  0001 C CNN "Supplier_Name"
+F 6 "0185580P" H 2900 4250 50  0001 C CNN "RS Part Number"
+F 7 "Toshiba" H 2900 4150 50  0001 C CNN "Manufacturer_Name"
+F 8 "2SK4017(Q)" H 2900 4050 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 2900 3950 50  0001 C CNN "Allied_Number"
+F 10 "" H 2900 3850 50  0001 C CNN "Other Part Number"
+F 11 "2.5" H 3350 3750 50  0001 C CNN "Height"
+	1    2300 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J2
+U 1 1 5A794E11
+P 4300 4400
+F 0 "J2" H 4300 4500 50  0000 C CNN
+F 1 "Conn_01x02" H 4300 4200 50  0000 C CNN
+F 2 "mylib2:TerminalBlock_small" H 4300 4400 50  0001 C CNN
+F 3 "" H 4300 4400 50  0001 C CNN
+	1    4300 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J3
+U 1 1 5A794E50
+P 4300 5000
+F 0 "J3" H 4300 5100 50  0000 C CNN
+F 1 "Conn_01x02" H 4300 4800 50  0000 C CNN
+F 2 "mylib2:TerminalBlock_small" H 4300 5000 50  0001 C CNN
+F 3 "" H 4300 5000 50  0001 C CNN
+	1    4300 5000
+	1    0    0    -1  
+$EndComp
+Text Label 1950 2300 2    60   ~ 0
+motor1
+Text Label 1950 2400 2    60   ~ 0
+motor2
+Text Label 2100 4400 2    60   ~ 0
+motor1
+Text Label 2100 5000 2    60   ~ 0
+motor2
+$Comp
+L +6V #PWR08
+U 1 1 5A795224
+P 2200 4150
+F 0 "#PWR08" H 2200 4000 50  0001 C CNN
+F 1 "+6V" H 2200 4290 50  0000 C CNN
+F 2 "" H 2200 4150 50  0001 C CNN
+F 3 "" H 2200 4150 50  0001 C CNN
+	1    2200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 5A795270
+P 4000 5350
+F 0 "#PWR09" H 4000 5100 50  0001 C CNN
+F 1 "GND" H 4000 5200 50  0000 C CNN
+F 2 "" H 4000 5350 50  0001 C CNN
+F 3 "" H 4000 5350 50  0001 C CNN
+	1    4000 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x15 J4
+U 1 1 5A795AC3
+P 4500 2300
+F 0 "J4" H 4500 3100 50  0000 C CNN
+F 1 "Conn_01x15" H 4500 1500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x15_Pitch2.54mm" H 4500 2300 50  0001 C CNN
+F 3 "" H 4500 2300 50  0001 C CNN
+	1    4500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x15 J1
+U 1 1 5A795B17
+P 1300 2300
+F 0 "J1" H 1300 3100 50  0000 C CNN
+F 1 "Conn_01x15" H 1300 1500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x15_Pitch2.54mm" H 1300 2300 50  0001 C CNN
+F 3 "" H 1300 2300 50  0001 C CNN
+	1    1300 2300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Nano IC1
+U 1 1 5A793552
+P 2200 1600
+F 0 "IC1" H 2950 1750 50  0000 C CNN
+F 1 "Nano" H 2950 50  50  0000 C CNN
+F 2 "Nano:DIP1524W102P254L4318H762Q30N" H 2950 -50 50  0001 C CNN
+F 3 "http://docs-europe.electrocomponents.com/webdocs/0db9/0900766b80db99cb.pdf" H 2950 -150 50  0001 C CNN
+F 4 "Development Boards & Kits - AVR ARDUINO NANO V3 A000005" H 2950 -250 50  0001 C CNN "Description"
+F 5 "RS" H 2950 -350 50  0001 C CNN "Supplier_Name"
+F 6 "6961667" H 2950 -450 50  0001 C CNN "RS Part Number"
+F 7 "Arduino" H 2950 -550 50  0001 C CNN "Manufacturer_Name"
+F 8 "Nano" H 2950 -650 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "70518857" H 2950 -750 50  0001 C CNN "Allied_Number"
+F 10 "" H 2950 -850 50  0001 C CNN "Other Part Number"
+F 11 "7.62" H 3550 -950 50  0001 C CNN "Height"
+	1    2200 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J5
+U 1 1 5A797508
+P 6900 4400
+F 0 "J5" H 6900 4500 50  0000 C CNN
+F 1 "Conn_01x02" H 6900 4200 50  0000 C CNN
+F 2 "mylib2:TerminalBlock_small" H 6900 4400 50  0001 C CNN
+F 3 "" H 6900 4400 50  0001 C CNN
+	1    6900 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J6
+U 1 1 5A79782B
+P 6900 5000
+F 0 "J6" H 6900 5100 50  0000 C CNN
+F 1 "Conn_01x02" H 6900 4800 50  0000 C CNN
+F 2 "mylib2:TerminalBlock_small" H 6900 5000 50  0001 C CNN
+F 3 "" H 6900 5000 50  0001 C CNN
+	1    6900 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +6V #PWR010
+U 1 1 5A7978A0
+P 6600 4300
+F 0 "#PWR010" H 6600 4150 50  0001 C CNN
+F 1 "+6V" H 6600 4440 50  0000 C CNN
+F 2 "" H 6600 4300 50  0001 C CNN
+F 3 "" H 6600 4300 50  0001 C CNN
+	1    6600 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 5A7978E1
+P 6500 5200
+F 0 "#PWR011" H 6500 4950 50  0001 C CNN
+F 1 "GND" H 6500 5050 50  0000 C CNN
+F 2 "" H 6500 5200 50  0001 C CNN
+F 3 "" H 6500 5200 50  0001 C CNN
+	1    6500 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3300 7200 3300
+Wire Wire Line
+	6400 3300 6200 3300
+Wire Wire Line
+	6200 3600 7200 3600
+Connection ~ 6700 3600
+Wire Wire Line
+	7200 3300 7200 3200
+Wire Wire Line
+	6200 3300 6200 3200
+Connection ~ 7200 3300
+Connection ~ 6200 3300
+Wire Wire Line
+	6700 3700 6700 3600
+Wire Wire Line
+	5850 1700 6050 1700
+Wire Wire Line
+	5850 2250 6050 2250
+Wire Wire Line
+	7450 2250 7650 2250
+Wire Wire Line
+	7450 1700 7650 1700
+Wire Wire Line
+	5900 1250 5900 2150
+Wire Wire Line
+	5900 1600 6050 1600
+Wire Wire Line
+	7450 1250 7450 2150
+Wire Wire Line
+	5900 2150 6050 2150
+Connection ~ 5900 1600
+Connection ~ 7450 1600
+Wire Wire Line
+	5550 1700 5450 1700
+Wire Wire Line
+	5450 1700 5450 2500
+Wire Wire Line
+	5450 2500 8050 2500
+Wire Wire Line
+	8050 2500 8050 1700
+Wire Wire Line
+	8050 1700 7950 1700
+Wire Wire Line
+	5900 2550 5900 2500
+Connection ~ 5900 2500
+Wire Wire Line
+	5550 2250 5450 2250
+Connection ~ 5450 2250
+Wire Wire Line
+	7950 2250 8050 2250
+Connection ~ 8050 2250
+Wire Wire Line
+	7550 1700 7550 1550
+Wire Wire Line
+	7550 1550 8150 1550
+Connection ~ 7550 1700
+Wire Wire Line
+	7550 2250 7550 2100
+Wire Wire Line
+	7550 2100 8150 2100
+Connection ~ 7550 2250
+Wire Wire Line
+	3700 2700 4300 2700
+Wire Wire Line
+	3700 2600 4300 2600
+Wire Wire Line
+	1500 2300 2200 2300
+Wire Wire Line
+	1500 2400 2200 2400
+Wire Wire Line
+	2100 4400 2300 4400
+Wire Wire Line
+	2300 5000 2100 5000
+Wire Wire Line
+	2200 4150 2200 5100
+Wire Wire Line
+	2200 5100 2300 5100
+Wire Wire Line
+	2300 4500 2200 4500
+Connection ~ 2200 4500
+Wire Wire Line
+	3500 4400 4100 4400
+Wire Wire Line
+	3500 5000 4100 5000
+Wire Wire Line
+	4100 4500 4000 4500
+Wire Wire Line
+	4000 4500 4000 5350
+Wire Wire Line
+	4100 5100 4000 5100
+Connection ~ 4000 5100
+Wire Wire Line
+	3700 1700 4300 1700
+Wire Wire Line
+	3700 1900 4300 1900
+Wire Wire Line
+	7450 1250 5900 1250
+Wire Wire Line
+	2200 1600 1500 1600
+Wire Wire Line
+	2200 1700 1500 1700
+Wire Wire Line
+	1500 1800 2200 1800
+Wire Wire Line
+	2200 1900 1500 1900
+Wire Wire Line
+	1500 2000 2200 2000
+Wire Wire Line
+	2200 2100 1500 2100
+Wire Wire Line
+	1500 2200 2200 2200
+Wire Wire Line
+	1500 2500 2200 2500
+Wire Wire Line
+	1500 2600 2200 2600
+Wire Wire Line
+	1500 2700 2200 2700
+Wire Wire Line
+	1500 2800 2200 2800
+Wire Wire Line
+	1500 2900 2200 2900
+Wire Wire Line
+	2200 3000 1500 3000
+Wire Wire Line
+	3700 1600 4300 1600
+Connection ~ 3900 1700
+Connection ~ 3900 1900
+Wire Wire Line
+	4300 1800 3700 1800
+Wire Wire Line
+	3700 2000 4300 2000
+Wire Wire Line
+	4300 2100 3700 2100
+Wire Wire Line
+	3700 2200 4300 2200
+Wire Wire Line
+	4300 2300 3700 2300
+Wire Wire Line
+	3700 2400 4300 2400
+Wire Wire Line
+	4300 2500 3700 2500
+Wire Wire Line
+	4300 2800 3700 2800
+Wire Wire Line
+	4300 2900 3700 2900
+Wire Wire Line
+	4300 3000 3700 3000
+Wire Wire Line
+	6600 4300 6600 5000
+Wire Wire Line
+	6600 4400 6700 4400
+Wire Wire Line
+	6600 5000 6700 5000
+Connection ~ 6600 4400
+Wire Wire Line
+	6700 5100 6500 5100
+Wire Wire Line
+	6500 4500 6500 5200
+Wire Wire Line
+	6700 4500 6500 4500
+Connection ~ 6500 5100
+$EndSCHEMATC
